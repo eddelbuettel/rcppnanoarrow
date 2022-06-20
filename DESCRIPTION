@@ -1,0 +1,14 @@
+Package: rcpparrowc
+Type: Package
+Title: Wrapping of arrow-c
+Version: 0.0.1
+Date: 2022-06-20
+Author: Dirk Eddelbuettel
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: Wrapping of arrow-c
+  Code from arrow-c (at https://github.com/paleolimbot/arrow-c) is included
+  under its Apache 2 license.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8)
+LinkingTo: Rcpp
+RoxygenNote: 6.0.1
