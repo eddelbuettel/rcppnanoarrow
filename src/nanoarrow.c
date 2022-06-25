@@ -15,5 +15,12 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//#include "error.c"
-//#include "schema.c"
+#if FALSE
+#include "allocator.c"
+#include "error.c"
+#include "metadata.c"
+#include "schema.c"
+#include "schema_view.c"
+#else
+const int unused = 42;
+#endif
