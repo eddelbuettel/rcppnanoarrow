@@ -12,7 +12,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // allocCheck
 bool allocCheck();
-RcppExport SEXP _rcpparrowc_allocCheck() {
+RcppExport SEXP _rcppnanoarrow_allocCheck() {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -22,11 +22,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_rcpparrowc_allocCheck", (DL_FUNC) &_rcpparrowc_allocCheck, 0},
+    {"_rcppnanoarrow_allocCheck", (DL_FUNC) &_rcppnanoarrow_allocCheck, 0},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_rcpparrowc(DllInfo *dll) {
+RcppExport void R_init_rcppnanoarrow(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
