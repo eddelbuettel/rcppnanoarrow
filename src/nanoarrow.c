@@ -17,10 +17,11 @@
 
 #if FALSE
 #include "allocator.c"
+#include "buffer.c"
 #include "error.c"
 #include "metadata.c"
 #include "schema.c"
 #include "schema_view.c"
 #else
-const int unused = 42;
+const int unused = 42;          /* compiler is happier without an empty branch */
 #endif

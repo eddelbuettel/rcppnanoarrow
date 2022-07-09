@@ -9,7 +9,7 @@ extern "C" {
 bool allocCheck() {
   struct ArrowSchema sch;
   ArrowErrorCode rc = 0;
-  rc = ArrowSchemaInit(&sch);
+  rc = ArrowSchemaInit(&sch, NANOARROW_TYPE_UNINITIALIZED);
   if (rc != NANOARROW_OK) Rcpp::stop("Could not alloc");
 
   ArrowSchemaRelease(&sch);
