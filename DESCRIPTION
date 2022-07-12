@@ -6,8 +6,8 @@ Date: 2022-06-20
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: Wrapping of nanoarrow
-  Code from arrow-c (at https://github.com/paleolimbot/nanoarrow) is included
-  under its Apache 2 license.
+  Demo / test package, code from nanoarrow (now at https://github.com/apache/arrow-nanoarrow, 
+  initially at at https://github.com/paleolimbot/nanoarrow) is included under its Apache 2 license.
 License: GPL (>= 2)
 Imports: Rcpp (>= 1.0.8)
 LinkingTo: Rcpp
